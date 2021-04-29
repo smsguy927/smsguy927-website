@@ -1,142 +1,180 @@
 <!DOCTYPE html>
-<html lang="en">
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-  body,
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    font-family: "Lato", sans-serif
-  }
+<html>
 
-  .w3-bar,
-  h1,
-  button {
-    font-family: "Montserrat", sans-serif
-  }
-
-  .fa-anchor,
-  .fa-coffee {
-    font-size: 200px
-  }
-</style>
+<head>
+  <title>House Store</title>
+  <link rel="stylesheet" type="text/css" href="reset.css">
+  <link rel="stylesheet" type="text/css" href="StartStyle.css">
+  <link href="https://fonts.googleapis.com/css?family=Creepster" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+</head>
 
 <body>
-
-  <!-- Navbar -->
-  <div class="w3-top">
-    <div class="w3-bar w3-red w3-card w3-left-align w3-large">
-      <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red"
-        href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-      <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
-      <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 1</a>
-      <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 2</a>
-      <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 3</a>
-      <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Link 4</a>
-    </div>
-
-    <!-- Navbar on small screens -->
-    <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
-      <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 1</a>
-      <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 2</a>
-      <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 3</a>
-      <a href="#" class="w3-bar-item w3-button w3-padding-large">Link 4</a>
-    </div>
-  </div>
-
   <!-- Header -->
-  <header class="w3-container w3-red w3-center" style="padding:128px 16px">
-    <h1 class="w3-margin w3-jumbo">START PAGE</h1>
-    <p class="w3-xlarge">Template by w3.css</p>
-    <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Get Started</button>
+  <header>
+    <div class="image-container logo-small">
+      <img src="https://content.codecademy.com/courses/freelance-1/unit-6/logo-sm.png">
+    </div>
+    <div class="image-container logo-big">
+      <img src="https://content.codecademy.com/courses/freelance-1/unit-6/logo-lg.png">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Tools</a></li>
+        <li><a href="#">Lumber</a></li>
+        <li><a href="#">Paint</a></li>
+        <li><a href="#">Garden</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- First Grid -->
-  <div class="w3-row-padding w3-padding-64 w3-container">
-    <div class="w3-content">
-      <div class="w3-twothird">
-        <h1>Lorem Ipsum</h1>
-        <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-          laboris nisi ut aliquip ex ea commodo consequat.</h5>
+  <!-- Banner -->
+  <section id="banner">
+    <h1>POKER IS SCARY</h1>
+    <p>But it doesn't have to be! Let our handy Virtual Paint Department help guide you through the process of choosing
+      a color. Know the hue? You know what to do. Click the order button and we'll get the paint to you.</p>
+  </section>
 
-        <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-          laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-          occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco
-          laboris nisi ut aliquip ex ea commodo consequat.</p>
+  <!-- Color Guide -->
+  <section id="color-guide">
+    <div class="introduction">
+      <h2>Color Guide</h2>
+      <p>Here at HouseStore, we take color seriously. In each of the following sections, well explore our base colors in
+        swatches that incrementally change three values: <strong>Hue</strong>, <strong>Saturation</strong> and
+        <strong>Lightness</strong>. You'll be able to pick from a wide variety of colors that all work well with each
+        other because they <strong>stem from the same value.</strong>
+      </p>
+  </section>
+
+  <!-- Red Swatches -->
+  <div class="color reds">
+    <div class="information">
+      <h3>Reds</h3>
+      <p>Firetrucks, lipstick, fresh berries &mdash; red is a color with power, emotion, intensity. For this reason we
+        recommend using reds as accent colors. Red is particularly suited to kitchens, as it is said to evoke hunger!
+      </p>
+      <p>Our base red is <span class="base-color">HSL (350, 100, 50)</span></p>
+      <div class="image-container">
+        <img src="	https://content.codecademy.com/courses/freelance-1/unit-6/reds.png">
       </div>
-
-      <div class="w3-third w3-center">
-        <i class="fa fa-anchor w3-padding-64 w3-text-red"></i>
+    </div>
+    <div class="swatches">
+      <h4>Lightness</h4>
+      <div class="swatch lightness">
+        <div class="color-1"></div>
+        <div class="color-2"></div>
+        <div class="color-3"></div>
+        <div class="color-4"></div>
+        <div class="color-5"></div>
+      </div>
+      <h4>Saturation</h4>
+      <div class="swatch saturation">
+        <div class="color-1"></div>
+        <div class="color-2"></div>
+        <div class="color-3"></div>
+        <div class="color-4"></div>
+        <div class="color-5"></div>
+      </div>
+      <h4>Hue</h4>
+      <div class="swatch hue">
+        <div class="color-1"></div>
+        <div class="color-2"></div>
+        <div class="color-3"></div>
+        <div class="color-4"></div>
+        <div class="color-5"></div>
       </div>
     </div>
   </div>
 
-  <!-- Second Grid -->
-  <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
-    <div class="w3-content">
-      <div class="w3-third w3-center">
-        <i class="fa fa-coffee w3-padding-64 w3-text-red w3-margin-right"></i>
+  <!-- Green Swatches -->
+  <div class="color greens">
+    <div class="information">
+      <h3>Greens</h3>
+      <p>They say that geniuses choose green &mdash; we think any of these verdant colors will look smart! Deck your
+        halls like a lush outdoor space, adorn your rooms with emerald, or just make your houseguests green with envy!
+      </p>
+      <p>Our base green is <span class="base-color">HSL (130, 100, 50)</span></p>
+      <div class="image-container">
+        <img src="	https://content.codecademy.com/courses/freelance-1/unit-6/greens.png">
       </div>
-
-      <div class="w3-twothird">
-        <h1>Lorem Ipsum</h1>
-        <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-          laboris nisi ut aliquip ex ea commodo consequat.</h5>
-
-        <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-          incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-          laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
-          occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur
-          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-          quis nostrud exercitation ullamco
-          laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    <div class="swatches">
+      <h4>Lightness</h4>
+      <div class="swatch lightness">
+        <div class="color-1"></div>
+        <div class="color-2"></div>
+        <div class="color-3"></div>
+        <div class="color-4"></div>
+        <div class="color-5"></div>
+      </div>
+      <h4>Saturation</h4>
+      <div class="swatch saturation">
+        <div class="color-1"></div>
+        <div class="color-2"></div>
+        <div class="color-3"></div>
+        <div class="color-4"></div>
+        <div class="color-5"></div>
+      </div>
+      <h4>Hue</h4>
+      <div class="swatch hue">
+        <div class="color-1"></div>
+        <div class="color-2"></div>
+        <div class="color-3"></div>
+        <div class="color-4"></div>
+        <div class="color-5"></div>
       </div>
     </div>
   </div>
 
-  <div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
-    <h1 class="w3-margin w3-xlarge">Quote of the day: live life</h1>
+  <!-- Blue Swatches -->
+  <div class="color blues">
+    <div class="information">
+      <h3>Blues</h3>
+      <p>Blues dont give us the blues &mdash; in fact, blue is one of the most popular colors in home interiors, and
+        for good reason! Energizing like a summer sky, calming like a lakeshore, light as mist or deep as indigo, blue
+        can do it all.</p>
+      <p>Our base blue is <span class="base-color">HSL (220, 100, 50)</span></p>
+      <div class="image-container">
+        <img src="	https://content.codecademy.com/courses/freelance-1/unit-6/blues.png">
+      </div>
+    </div>
+    <div class="swatches">
+      <h4>Lightness</h4>
+      <div class="swatch lightness">
+        <div class="color-1"></div>
+        <div class="color-2"></div>
+        <div class="color-3"></div>
+        <div class="color-4"></div>
+        <div class="color-5"></div>
+      </div>
+      <h4>Saturation</h4>
+      <div class="swatch saturation">
+        <div class="color-1"></div>
+        <div class="color-2"></div>
+        <div class="color-3"></div>
+        <div class="color-4"></div>
+        <div class="color-5"></div>
+      </div>
+      <h4>Hue</h4>
+      <div class="swatch hue">
+        <div class="color-1"></div>
+        <div class="color-2"></div>
+        <div class="color-3"></div>
+        <div class="color-4"></div>
+        <div class="color-5"></div>
+      </div>
+    </div>
+  </div>
   </div>
 
   <!-- Footer -->
-  <footer class="w3-container w3-padding-64 w3-center w3-opacity">
-    <div class="w3-xlarge w3-padding-32">
-      <i class="fa fa-facebook-official w3-hover-opacity"></i>
-      <i class="fa fa-instagram w3-hover-opacity"></i>
-      <i class="fa fa-snapchat w3-hover-opacity"></i>
-      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-      <i class="fa fa-twitter w3-hover-opacity"></i>
-      <i class="fa fa-linkedin w3-hover-opacity"></i>
-    </div>
-    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  <footer>
+    <strong>All set? Click below to order.</strong>
+    <p>Most colors can be delivered to your door within 48 hours. We'll reach out if your color needs some extra
+      attention, which could delay shipment.</p>
+    <a href="#" class="button">Order My Paint</a>
   </footer>
-
-  <script>
-    // Used to toggle the menu on small screens when clicking on the menu button
-    function myFunction() {
-      var x = document.getElementById("navDemo");
-      if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-      } else {
-        x.className = x.className.replace(" w3-show", "");
-      }
-    }
-  </script>
-
 </body>
 
 </html>
