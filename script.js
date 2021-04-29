@@ -1,3 +1,9 @@
-const h2 = document.createElement('h2');
-h2.textContent = "This content added by JavaScript";
-document.querySelector('body').appendChild(h2);
+const form = document.getElementById('form');
+const contactInfo = document.getElementById('contact-info');
+function submit(event) {
+  form.setAttribute('hidden', '');
+  thanks.removeAttribute('hidden');
+
+  // For this example, don't actually submit the form
+  event.preventDefault();
+}
