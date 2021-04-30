@@ -3,9 +3,9 @@ document.getElementById("info-quiz").onsubmit = function () {
   const contactInfo = document.getElementById('contact-info');
   const infoAnswer = 'poker';
   let userText = document.infoQuiz.kWord.value;
-  alert(userText);
+
   if (userText == infoAnswer) {
-    alert("hello");
+
     contactInfo.removeAttribute('hidden');
 
   }
