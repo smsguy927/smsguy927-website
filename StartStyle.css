@@ -87,7 +87,7 @@ nav li:last-child {
   position: relative;
   height: 43.75rem;
   padding: 0 25%;
-  background: url("	https://content.codecademy.com/courses/freelance-1/unit-6/banner.png") center center no-repeat;
+  background: url("RainbowBetFamily.jpg") center center no-repeat;
   background-size: cover;
   text-align: center;
 }
@@ -135,11 +135,11 @@ h1 {
 
 /* Color Guide */
 
-#color-guide {
+#introduction {
   padding: 3.875rem 15% 13.5rem 15%;
 }
 
-#color-guide .introduction {
+#introduction .introduction {
   padding: 0 10%;
   margin-bottom: .75rem;
   text-align: center;
@@ -147,14 +147,14 @@ h1 {
   line-height: 1.4;
 }
 
-#color-guide h2 {
+#introduction h2 {
   margin-bottom: 2.4375rem;
   line-height: 1;
   font-size: 2rem;
   color: orange;
 }
 
-#color-guide .color {
+#introduction .color {
   display: flex;
   justify-content: space-between;
   padding-top: 5.25rem;
@@ -234,212 +234,42 @@ h1 {
   }
 }
 
-/* Red Swatches */
 
-.reds .base-color {
-  color: #ff002b;
+#projects {
+  position: relative;
+  height: 30rem;
+  padding: 7.8125rem 30% 0 30%;
+  background-size: cover;
+  text-align: left;
+  font-size: 1.125rem;
+  line-height: 1.4;
+  color: orange;
 }
 
-/* Red lightness decreases by 15 */
-.reds .lightness .color-1 {
-
-}
-
-.reds .lightness .color-2 {
-  background-color: hsl(350, 100%, 65%);
-}
-
-.reds .lightness .color-3 {
-  background-color: hsl(350, 100%, 50%);
-}
-
-.reds .lightness .color-4 {
-  background-color: hsl(350, 100%, 35%);
-}
-
-.reds .lightness .color-5 {
-  background-color: hsl(350, 100%, 20%);
-}
-
-/* Red saturation decreases by 15 */
-.reds .saturation .color-1 {
+#projects:before { /* Overlay */
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 
 }
 
-.reds .saturation .color-2 {
-  background-color: hsl(350, 85%, 50%);
+#projects * {
+  position: relative; /* Makes elements display above overlay. */
 }
 
-.reds .saturation .color-3 {
-  background-color: hsl(350, 70%, 50%);
+
+
+#projects p {
+  margin-bottom: 4.3125rem;
 }
 
-.reds .saturation .color-4 {
-  background-color: hsl(350, 55%, 50%);
-}
 
-.reds .saturation .color-5 {
-  background-color: hsl(350, 40%, 50%);
-}
 
-/* Red hue increases by 15 */
-.reds .hue .color-1 {
 
-}
 
-.reds .hue .color-2 {
-  background-color: hsl(335, 100%, 50%);
-}
-
-.reds .hue .color-3 {
-  background-color: hsl(350, 100%, 50%);
-}
-
-.reds .hue .color-4 {
-  background-color: hsl(5, 100%, 50%);
-}
-
-.reds .hue .color-5 {
-  background-color: hsl(20, 100%, 50%);
-}
-
-/* Green Swatches */
-
-.greens .base-color {
-  color: #00ff2a;
-}
-
-/* Green lightness decreases by 20 */
-.greens .lightness .color-1 {
-
-}
-
-.greens .lightness .color-2 {
-  background-color: hsl(103, 100%, 70%);
-}
-
-.greens .lightness .color-3 {
-  background-color: hsl(103, 100%, 50%);
-}
-
-.greens .lightness .color-4 {
-  background-color: hsl(103, 100%, 30%);
-}
-
-.greens .lightness .color-5 {
-  background-color: hsl(104, 100%, 10%);
-}
-
-/* Green saturation decreases by 20 */
-.greens .saturation .color-1 {
-
-}
-
-.greens .saturation .color-2 {
-  background-color: hsl(130, 80%, 50%);
-}
-
-.greens .saturation .color-3 {
-  background-color: hsl(130, 60%, 50%);
-}
-
-.greens .saturation .color-4 {
-  background-color: hsl(130, 40%, 50%);
-}
-
-.greens .saturation .color-5 {
-  background-color: hsl(131, 20%, 50%);
-}
-
-/* Green hue increases by 22 */
-.greens .hue .color-1 {
-
-}
-
-.greens .hue .color-2 {
-  background-color: hsl(108, 100%, 50%);
-}
-
-.greens .hue .color-3 {
-  background-color: hsl(130, 100%, 50%);
-}
-
-.greens .hue .color-4 {
-  background-color: hsl(152, 100%, 50%);
-}
-
-.greens .hue .color-5 {
-  background-color: hsl(174, 100%, 50%);
-}
-
-/* Blue Swatches */
-
-.blues .base-color {
-  color: #0055ff;
-}
-
-/* Blue lightness decreases by 20 */
-.blues .lightness .color-1 {
-
-}
-
-.blues .lightness .color-2 {
-  background-color: hsl(220, 100%, 70%);
-}
-
-.blues .lightness .color-3 {
-  background-color: hsl(220, 100%, 50%);
-}
-
-.blues .lightness .color-4 {
-  background-color: hsl(220, 100%, 30%);
-}
-
-.blues .lightness .color-5 {
-  background-color: hsl(220, 100%, 10%);
-}
-
-/* Blue saturation decreases by 20 */
-.blues .saturation .color-1 {
-
-}
-
-.blues .saturation .color-2 {
-  background-color: hsl(220, 80%, 50%);
-}
-
-.blues .saturation .color-3 {
-  background-color: hsl(220, 60%, 50%);
-}
-
-.blues .saturation .color-4 {
-  background-color: hsl(220, 40%, 50%);
-}
-
-.blues .saturation .color-5 {
-  background-color: hsl(220, 20%, 50%);
-}
-
-/* Blue hue decreases by 20 */
-.blues .hue .color-1 {
-
-}
-
-.blues .hue .color-2 {
-  background-color: hsl(240, 100%, 50%);
-}
-
-.blues .hue .color-3 {
-  background-color: hsl(220, 100%, 50%);
-}
-
-.blues .hue .color-4 {
-  background-color: hsl(200, 100%, 50%);
-}
-
-.blues .hue .color-5 {
-  background-color: hsl(180, 100%, 50%);
-}
 
 /* Footer */
 
@@ -490,4 +320,17 @@ footer .button {
     padding: 4.8125rem 15% 0 15%;
   }
 }
+/*Projects*/
 
+#projects li {
+  display: inline;
+  padding-right: 2rem;
+}
+
+#projects li:last-child {
+  padding-right: 0;
+}
+
+#wheel-of-programming {
+  background-image: url("sms-website-wheel.jpg");
+}

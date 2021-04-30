@@ -1,9 +1,16 @@
-const form = document.getElementById('form');
-const contactInfo = document.getElementById('contact-info');
-function submit(event) {
-  form.setAttribute('hidden', '');
-  thanks.removeAttribute('hidden');
 
-  // For this example, don't actually submit the form
-  event.preventDefault();
+document.getElementById("info-quiz").onsubmit = function () {
+  const contactInfo = document.getElementById('contact-info');
+  const infoAnswer = 'poker';
+  let userText = document.infoQuiz.kWord.value;
+  alert(userText);
+  if (userText == infoAnswer) {
+    alert("hello");
+    contactInfo.removeAttribute('hidden');
+
+  }
+  else {
+    location.replace("https://www.youtube.com/watch?v=dQw4w9WgXcQ");
+  }
+  return false;
 }
